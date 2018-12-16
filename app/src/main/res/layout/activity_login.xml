@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlLogin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/UlensColor"
+    tools:context="com.ulens.ulensapp.NonUserThings.LoginActivity">
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="328dp"
+        android:layout_height="51dp"
+        android:layout_alignLeft="@+id/cx_remember"
+        android:layout_alignStart="@+id/cx_remember"
+        android:layout_below="@+id/cx_remember"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundedcorners"
+        android:paddingBottom="15dp"
+        android:paddingLeft="120dp"
+        android:paddingRight="120dp"
+        android:paddingTop="15dp"
+        android:text="@string/login"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <ImageView
+        android:id="@+id/imgText"
+        android:layout_width="322dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/imgPass"
+        android:layout_alignStart="@+id/imgPass"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="17dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPass"
+        android:layout_width="322dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/imgText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgText" />
+
+    <ImageView
+        android:id="@+id/iconLock"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/imgPass"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/iconlock"
+        app:layout_constraintBottom_toBottomOf="@+id/imgPass"
+        app:layout_constraintEnd_toEndOf="@+id/imgPass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgPass"
+        app:layout_constraintTop_toTopOf="@+id/imgPass"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <ImageView
+        android:id="@+id/iconEpost"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_above="@+id/imgPass"
+        android:layout_alignEnd="@+id/iconLock"
+        android:layout_alignLeft="@+id/iconLock"
+        android:layout_alignRight="@+id/iconLock"
+        android:layout_alignStart="@+id/iconLock"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/iconepost"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgText"
+        app:layout_constraintEnd_toEndOf="@+id/imgText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgText"
+        app:layout_constraintTop_toTopOf="@+id/imgText"
+        app:layout_constraintVertical_bias="0.823" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="308dp"
+        android:layout_height="211dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logodescription"
+        android:paddingBottom="30dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ulenslogosplash" />
+
+    <EditText
+        android:id="@+id/edtEmailRegister"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iconEpost"
+        android:layout_alignEnd="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:background="@color/transparent"
+        android:ems="10"
+        android:hint="Email Adresi"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/imgText"
+        app:layout_constraintEnd_toEndOf="@+id/imgText"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/iconEpost"
+        app:layout_constraintTop_toTopOf="@+id/imgText" />
+
+    <EditText
+        android:id="@+id/edtPass"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iconLock"
+        android:layout_alignLeft="@+id/edtEmailRegister"
+        android:layout_alignStart="@+id/edtEmailRegister"
+        android:layout_marginBottom="6dp"
+        android:background="@color/White"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/imgPass"
+        app:layout_constraintEnd_toEndOf="@+id/imgPass"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/iconLock"
+        app:layout_constraintTop_toTopOf="@+id/imgPass" />
+
+    <TextView
+        android:id="@+id/txtHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="@string/hello"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:text="@string/h2"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/txtPassForget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imgPass"
+        android:layout_alignRight="@+id/imgPass"
+        android:layout_below="@+id/imgPass"
+        android:layout_marginTop="14dp"
+        android:text="@string/forgetpassword"
+        android:textColor="#ffffff" />
+
+    <CheckBox
+        android:id="@+id/cx_remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPassForget"
+        android:layout_alignBottom="@+id/txtPassForget"
+        android:layout_alignLeft="@+id/imgPass"
+        android:layout_alignStart="@+id/imgPass"
+        android:buttonTint="#ffffff"
+        android:shadowColor="#ffffff"
+        android:text="@string/rememberme"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="@string/register"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/txtAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:text="Yönetici Girişi"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>

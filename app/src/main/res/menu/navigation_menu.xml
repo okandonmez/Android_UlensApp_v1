@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/unreportedInvoices"
+        android:icon="@drawable/iconbill"
+        android:title="Harcamalarım" />
+    <item
+        android:id="@+id/myReports"
+        android:icon="@drawable/iconsended"
+        android:title="Raporlarım" />
+    <!--<item-->
+        <!--android:id="@+id/resultedReports"-->
+        <!--android:icon="@drawable/iconnotconfirmed"-->
+        <!--android:title="@string/confirmedreports" />-->
+    <item
+        android:id="@+id/support"
+        android:icon="@drawable/iconsupport"
+        android:title="Destek" />
+
+    <!--<item android:id="@+id/settings"-->
+        <!--android:icon="@drawable/iconsettings"-->
+        <!--android:title="@string/settings"/>-->
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/iconlogout"
+        android:title="@string/logout" />
+
+
+
+
+</menu>

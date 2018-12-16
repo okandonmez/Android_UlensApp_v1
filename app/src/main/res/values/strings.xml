@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">UlensApp</string>
+
+    <!-- SPLASH SCREEN -->
+    <string name="ulenslogodescription">Ulens Logo</string>
+
+    <!-- LOGIN SCREEN -->
+    <string name="logodescription">Ulens Logo</string>
+    <string name="hello"><b>Merhaba!</b></string>
+    <string name="h2">Hemen kayıt ol veya giriş yap.</string>
+    <string name="forgetpassword"><b>Şifreni mi Unuttun ?</b></string>
+    <string name="rememberme"><b>Beni Hatırla</b></string>
+    <string name="login"><b>Giriş Yap</b></string>
+    <string name="register">Hesabın yok mu ? Hemen <b>Kayıt ol</b> </string>
+
+    <!-- REGISTER SCREEN -->
+    <string name="doneRegister">Kaydı Tamamla</string>
+    <string name="goLogin">Hesabın var mı ? Hemen <b>Giriş Yap</b></string>
+
+
+    <!-- FORGET PASSWORD -->
+    <string name="goLogin2"><b>Giriş Yap</b></string>
+    <string name="didYouForget">Şifreni mi Unuttun ?</string>
+    <string name="forgetpassbelowtext">Şifrenizi yenilemek için e-mail adresinizi girin.</string>
+    <string name="submit">Gönder</string>
+    <string name="title_activity_home_page">HomePage</string>
+
+    <!-- HOME PAGE -->
+    <string name="newInvoices"><b>Yeni Fişler</b></string>
+    <string name="notSended"><b>Gönderilmemiş</b></string>
+
+    <!--INVOICE DETAIL -->
+    <string name="isBillable"><b>Faturalandırılabilir mi ?</b></string>
+    <string name="taxPrice">Vergi</string>
+    <string name="paymentMethod">Ödeme Yöntemi</string>
+    <string name="billDescription"><b>Fiş Detayı</b></string>
+    <string name="billNotDescripted"><font size="12">Fiş Detayı Girilmemiş</font></string>
+    <string name="scanning">Taranıyor</string>
+    <string name="btnsubmit">Gönder</string>
+
+
+    <!-- MANUEL INVOICE -->
+    <string name="invoicename">Fiş Adı Giriniz</string>
+    <string name="close">Close</string>
+    <string name="open">Open</string>
+
+
+    <array name="spinnerCategory">
+        <item>Uçak Bileti</item>
+        <item>Eğlence</item>
+        <item>Etkinlik</item>
+        <item>Sabit Kıymet</item>
+        <item>Hediye</item>
+        <item>Yemek</item>
+        <item>Çeşitli</item>
+        <item>Ofis İhtiyaçları</item>
+
+    </array>
+
+    <string-array name="KDVRatio">
+        <item>%1</item>
+        <item>%8</item>
+        <item>%18</item>
+    </string-array>
+
+    <string-array name="paymentmethod">
+        <item>Kredi Kartı</item>
+        <item>Nakit</item>
+    </string-array>
+
+    <!-- MENU -->
+    <string name="unsubmitted"><font size="15">Gönderilmemiş Raporlar</font></string>
+    <string name="submittedreports"><font size="15">Gönderilmiş Raporlar</font></string>
+    <string name="confirmedreports"><font size="15">Sonuçlanan Raporlarım</font></string>
+    <string name="settings"><font size="15">Ayarlar</font></string>
+    <string name="logout"><font size="15">Çıkış Yap</font></string>
+    <string name="title_activity_all_reports">AllReports</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab_text_1">Hazırlanan Raporlar</string>
+    <string name="tab_text_2">Gönderilmiş Raporlar</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_all_reports2">AllReports2</string>
+
+
+    <string-array name="planets_array">
+        <item>Rapor Adı</item>
+    </string-array>
+    <string name="title_activity_resulted_reports_confirmed">ResultedReportsConfirmed</string>
+    <string name="title_activity_resulted_reports_rejected">ResultedReportsRejected</string>
+
+
+</resources>

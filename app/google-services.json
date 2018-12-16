@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "372681844513",
+    "firebase_url": "https://ulensapp-e6209.firebaseio.com",
+    "project_id": "ulensapp-e6209",
+    "storage_bucket": "ulensapp-e6209.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:372681844513:android:954f37bbc0d0b2d5",
+        "android_client_info": {
+          "package_name": "com.ulens.ulensapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "372681844513-u5kvu3uibjcbttj3norg1t8karl7c65d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ulens.ulensapp",
+            "certificate_hash": "cb7617d54fd0326c40b6e9282a30349f9d4cf44f"
+          }
+        },
+        {
+          "client_id": "372681844513-s680hh4fm3j9dv74q7assskns7baeo9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDzvAE4SAXMFOXKwgRf9121npIj7wgOGY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "372681844513-s680hh4fm3j9dv74q7assskns7baeo9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

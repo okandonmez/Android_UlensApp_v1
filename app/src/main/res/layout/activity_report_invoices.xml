@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ulens.ulensapp.Reports.ReportUnSubmittedInvoices">
+
+    <Button
+        android:id="@+id/btnBackUSI"
+        android:layout_width="25dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/iconback" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarReportInvoices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/UlensColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeToolbar"
+        app:titleMarginStart="60dp">
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbarReportInvoices"
+        android:background="@color/UlensSecondColor"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:id="@+id/txtTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Total Amount"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout2">
+
+        <ListView
+            android:id="@+id/lvInvoicesReport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout2" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSendReport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/transparent"
+        android:text="Onaya Gönder"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnInvoiceToReport"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignEnd="@+id/btnSendReport"
+        android:layout_alignLeft="@+id/btnSendReport"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="22dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/iconreceipt" />
+
+    <TextView
+        android:id="@+id/txtNoInvoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnInvoiceToReport"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:text="Bu rapora kayıtlı fiş bulunmamakta."
+        android:visibility="invisible" />
+
+</RelativeLayout>

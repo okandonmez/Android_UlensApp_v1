@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/load"
+        android:title="Yükle"
+        android:icon="@drawable/iconcameragray"/>
+
+    <item android:id="@+id/manuelAdd"
+        android:title="Manuel Ekle"
+        android:icon="@drawable/iconmanuel"/>
+
+    <!--<item android:id="@+id/distance"-->
+        <!--android:title="Mesafe"-->
+        <!--android:icon="@drawable/iconcar"/>-->
+
+    <item android:id="@+id/newReport"
+        android:title="Rapor Oluştur"/>
+
+</menu>

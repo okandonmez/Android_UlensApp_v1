@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imgIcon"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+         <!--/>-->
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtDate"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="18dp"
+        android:background="@color/DarkGray" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_vertical"
+        app:civ_border="false"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="15"
+        app:civ_shadow_color="@color/SlateGray"/>
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/imgIcon"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginLeft="12dp"-->
+
+        <!--android:layout_marginStart="12dp"-->
+        <!--android:background="@drawable/circleimageshadow"-->
+        <!--android:gravity="center_vertical" />-->
+
+    <TextView
+        android:id="@+id/txtAmountRow"
+        android:layout_width="72dp"
+        android:layout_height="42dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtTitle"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textColor="@color/UlensColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/imgIcon"
+        android:layout_toRightOf="@+id/imgIcon"
+        android:text="TextView"
+        android:textColor="@color/Black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtDate"
+        android:layout_alignLeft="@+id/txtTitle"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgIcon"
+        android:layout_alignLeft="@+id/txtCategory"
+        android:layout_alignStart="@+id/txtCategory"
+        android:text="2018/01/01" />
+
+</RelativeLayout>

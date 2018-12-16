@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlRegister"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/UlensColor"
+    tools:context="com.ulens.ulensapp.NonUserThings.RegisterActivity">
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="328dp"
+        android:layout_height="51dp"
+        android:layout_alignLeft="@+id/imgPass2"
+        android:layout_alignStart="@+id/imgPass2"
+        android:layout_below="@+id/imgPass2"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/roundedcorners"
+        android:text="Kaydı Tamamla"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.892" />
+
+    <ImageView
+        android:id="@+id/imgName"
+        android:layout_width="322dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgText2"
+        android:layout_width="322dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/imgName"
+        android:layout_alignStart="@+id/imgName"
+        android:layout_below="@+id/imgName"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPass2"
+        android:layout_width="322dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/imgText2"
+        android:layout_alignStart="@+id/imgText2"
+        android:layout_below="@+id/imgText2"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgText" />
+
+    <ImageView
+        android:id="@+id/iconLock2"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/edtPassReg"
+        android:layout_alignLeft="@+id/imgPass2"
+        android:layout_alignStart="@+id/imgPass2"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:src="@drawable/iconlock"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgPass"
+        app:layout_constraintEnd_toEndOf="@+id/imgPass"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgPass"
+        app:layout_constraintTop_toTopOf="@+id/imgPass"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <ImageView
+        android:id="@+id/iconEpost2"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_alignBottom="@+id/edtEmailRegister"
+        android:layout_alignLeft="@+id/iconLock2"
+        android:layout_alignStart="@+id/iconLock2"
+        android:src="@drawable/iconepost"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgText"
+        app:layout_constraintEnd_toEndOf="@+id/imgText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgText"
+        app:layout_constraintTop_toTopOf="@+id/imgText"
+        app:layout_constraintVertical_bias="0.823" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="308dp"
+        android:layout_height="211dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logodescription"
+        android:paddingBottom="30dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.558"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ulenslogosplash" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgName"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="14dp"
+        android:background="@color/transparent"
+        android:ems="10"
+        android:hint="İsim Soyisim"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/imgText"
+        app:layout_constraintEnd_toEndOf="@+id/imgText"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/iconEpost"
+        app:layout_constraintTop_toTopOf="@+id/imgText" />
+
+    <EditText
+        android:id="@+id/edtEmailRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgText2"
+        android:layout_alignLeft="@+id/edtName"
+        android:layout_alignStart="@+id/edtName"
+        android:layout_marginBottom="14dp"
+        android:background="@color/transparent"
+        android:ems="10"
+        android:hint="Email Adresi"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/imgText"
+        app:layout_constraintEnd_toEndOf="@+id/imgText"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/iconEpost"
+        app:layout_constraintTop_toTopOf="@+id/imgText" />
+
+    <EditText
+        android:id="@+id/edtPassReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgPass2"
+        android:layout_alignLeft="@+id/edtEmailRegister"
+        android:layout_alignStart="@+id/edtEmailRegister"
+        android:layout_marginBottom="12dp"
+        android:background="@color/White"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgPass"
+        app:layout_constraintEnd_toEndOf="@+id/imgPass"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toEndOf="@+id/iconLock"
+        app:layout_constraintTop_toTopOf="@+id/imgPass" />
+
+    <TextView
+        android:id="@+id/txtHello2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:text="@string/hello"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:text="@string/h2"
+        android:textColor="#ffffff" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/iconEpost2"
+        android:layout_alignRight="@+id/iconEpost2"
+        android:layout_alignTop="@+id/edtName"
+        android:layout_marginRight="5dp"
+        app:srcCompat="@drawable/iconperson" />
+
+    <TextView
+        android:id="@+id/txtGoLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/goLogin"
+        android:textColor="#ffffff" />
+</RelativeLayout>

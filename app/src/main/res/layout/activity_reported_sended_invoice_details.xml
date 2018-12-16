@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.ulens.ulensapp.EditInvoices.ChangeableInvoice">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imgHeaderRID"
+            android:background="@color/UlensColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgHeaderRID">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="39dp"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:id="@+id/edtNameRID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/view"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/transparent"
+                android:ems="10"
+                android:hint="İsim"
+                android:inputType="textPersonName"
+                android:text="Yükleniyor"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spCategoryRID"
+                android:layout_width="175dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/view"
+                android:layout_alignRight="@+id/view"
+                android:layout_alignTop="@+id/spCategoryRID"
+                android:text="Date" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnBackRID"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/iconblack"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgHeaderRID"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/UlensSecondColor"
+            android:scaleType="centerCrop" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/relativeLayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="400dp">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginTop="17dp"
+                    android:text="Toplam Tutar" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/edtKDVRatioRID"
+                    android:layout_marginLeft="28dp"
+                    android:layout_marginStart="28dp"
+                    android:layout_toEndOf="@+id/edtAmountRID"
+                    android:layout_toRightOf="@+id/edtAmountRID"
+                    android:text="KDV Oranı" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView15"
+                    android:layout_alignStart="@+id/textView15"
+                    android:layout_below="@+id/textView15"
+                    android:layout_marginTop="57dp"
+                    android:text="KDV Tutarı" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/textView16"
+                    android:layout_alignBottom="@+id/textView16"
+                    android:layout_alignLeft="@+id/textView14"
+                    android:layout_alignStart="@+id/textView14"
+                    android:text="Para Birimi" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/edtKDVAmountRID"
+                    android:layout_alignStart="@+id/edtKDVAmountRID"
+                    android:layout_below="@+id/edtKDVAmountRID"
+                    android:layout_marginTop="10dp"
+                    android:text="Rapor" />
+
+                <Spinner
+                    android:id="@+id/spReportNames"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignEnd="@+id/edtCurrancyRcp"
+                    android:layout_alignLeft="@+id/textView18"
+                    android:layout_alignRight="@+id/edtCurrancyRcp"
+                    android:layout_alignStart="@+id/textView18"
+                    android:layout_below="@+id/textView18"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/spReportNames"
+                    android:layout_alignStart="@+id/spReportNames"
+                    android:layout_below="@+id/spReportNames"
+                    android:layout_marginTop="10dp"
+                    android:text="Fiş Detayı" />
+
+                <EditText
+                    android:id="@+id/edtAmountRID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView15"
+                    android:layout_alignStart="@+id/textView15"
+                    android:layout_below="@+id/textView15"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edtKDVRatioRID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/edtAmountRID"
+                    android:layout_alignLeft="@+id/textView14"
+                    android:layout_alignStart="@+id/textView14"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edtKDVAmountRID"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/edtCurrancyRcp"
+                    android:layout_alignBottom="@+id/edtCurrancyRcp"
+                    android:layout_alignLeft="@+id/textView16"
+                    android:layout_alignStart="@+id/textView16"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/edtCurrancyRcp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView17"
+                    android:layout_alignStart="@+id/textView17"
+                    android:layout_below="@+id/textView17"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:inputType="textPersonName"
+                    android:text="TL" />
+
+                <EditText
+                    android:id="@+id/edtDescriptionRID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textView19"
+                    android:layout_alignStart="@+id/textView19"
+                    android:layout_below="@+id/textView19"
+                    android:layout_marginTop="10dp"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btnUpdateRID"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edtDescriptionRID"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/roundedcorners"
+                    android:text="Güncelle"
+                    android:textColor="@android:color/white" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+

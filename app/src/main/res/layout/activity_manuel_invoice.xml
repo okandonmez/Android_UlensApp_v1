@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ulens.ulensapp.AddInvoiceActivities.ManuelInvoice">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/UlensColor"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeToolbar"
+        app:title="Manuel Fiş Giriş" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="650dp"
+            android:layout_below="@+id/toolbar7">
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edtDescription"
+                android:layout_alignStart="@+id/edtDescription"
+                android:layout_below="@+id/edtDescription"
+                android:layout_marginTop="10dp"
+                android:text="Ödeme Yöntemi" />
+
+            <Spinner
+                android:id="@+id/spKDVRatio"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText8"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/editText8"
+                android:layout_below="@+id/textView26"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp" />
+
+            <Spinner
+                android:id="@+id/spCategory"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/toolbar7"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="11dp"
+                tools:ignore="NotSibling"
+                android:layout_marginLeft="15dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spCategory"
+                android:layout_alignStart="@+id/spCategory"
+                android:layout_below="@+id/spCategory"
+                android:layout_marginTop="20dp"
+                android:text="Toplam Tutar" />
+
+            <EditText
+                android:id="@+id/edtTotalAmount"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_alignStart="@+id/textView8"
+                android:layout_below="@+id/textView8"
+                android:digits="0123456789.,$"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/edtTotalAmount"
+                android:layout_marginLeft="39dp"
+                android:layout_marginStart="39dp"
+                android:layout_toEndOf="@+id/edtTotalAmount"
+                android:layout_toRightOf="@+id/edtTotalAmount"
+                android:text="KDV Oranı" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView26"
+                android:layout_alignStart="@+id/textView26"
+                android:layout_below="@+id/textView26"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edtTotalAmount"
+                android:layout_alignStart="@+id/edtTotalAmount"
+                android:layout_below="@+id/edtTotalAmount"
+                android:layout_marginTop="10dp"
+                android:text="KDV Tutarı" />
+
+            <EditText
+                android:id="@+id/edtKDVAmount"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView28"
+                android:layout_alignStart="@+id/textView28"
+                android:digits="0123456789.,$"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/textView28" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText8"
+                android:layout_alignStart="@+id/editText8"
+                android:layout_below="@+id/editText8"
+                android:layout_marginTop="10dp"
+                android:text="Para Birimi" />
+
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView29"
+                android:layout_alignStart="@+id/textView29"
+                android:layout_below="@+id/textView29"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="textPersonName"
+                android:text="TL" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edtKDVAmount"
+                android:layout_alignStart="@+id/edtKDVAmount"
+                android:layout_below="@+id/edtKDVAmount"
+                android:layout_marginTop="10dp"
+                android:text="Kurum" />
+
+            <EditText
+                android:id="@+id/edtMerchantName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView30"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignStart="@+id/textView30"
+                android:layout_below="@+id/textView30"
+                android:layout_marginEnd="30dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edtMerchantName"
+                android:layout_alignStart="@+id/edtMerchantName"
+                android:layout_below="@+id/edtMerchantName"
+                android:layout_marginTop="10dp"
+                android:text="Rapor"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView31"
+                android:layout_alignBottom="@+id/textView31"
+                android:layout_alignLeft="@+id/textView31"
+                android:layout_alignStart="@+id/textView31"
+                android:text="Tarih" />
+
+            <EditText
+                android:id="@+id/edtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/edtMerchantName"
+                android:layout_alignLeft="@+id/textView32"
+                android:layout_alignRight="@+id/edtMerchantName"
+                android:layout_alignStart="@+id/textView32"
+                android:layout_below="@+id/textView32"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edtDate"
+                android:layout_alignStart="@+id/edtDate"
+                android:layout_below="@+id/edtDate"
+                android:layout_marginTop="10dp"
+                android:text="Fiş No" />
+
+            <EditText
+                android:id="@+id/edtInvoiceNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/edtDate"
+                android:layout_alignLeft="@+id/textView33"
+                android:layout_alignRight="@+id/edtDate"
+                android:layout_alignStart="@+id/textView33"
+                android:layout_below="@+id/textView33"
+                android:digits="0123456789.,$"
+                android:ems="10"
+                android:inputType="numberDecimal" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/edtInvoiceNo"
+                android:layout_alignStart="@+id/edtInvoiceNo"
+                android:layout_below="@+id/edtInvoiceNo"
+                android:layout_marginTop="10dp"
+                android:text="Not" />
+
+            <EditText
+                android:id="@+id/edtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/edtInvoiceNo"
+                android:layout_alignLeft="@+id/textView34"
+                android:layout_alignRight="@+id/edtInvoiceNo"
+                android:layout_alignStart="@+id/textView34"
+                android:layout_below="@+id/textView34"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/roundedcorners"
+                android:text="Gönder"
+                android:textColor="@android:color/white" />
+
+            <Spinner
+                android:id="@+id/spPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView35"
+                android:digits="0123456789.,$"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:layout_alignStart="@+id/textView35"
+                android:layout_below="@+id/textView35"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="5dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

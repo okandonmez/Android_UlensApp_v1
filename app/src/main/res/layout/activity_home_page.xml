@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/hpCoordinatorL">
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    tools:context="com.ulens.ulensapp.HomePage">
+
+
+    <android.support.v4.widget.DrawerLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    android:id="@+id/drawerLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+  >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_home_page" />
+
+    <ImageView
+        android:id="@+id/imgNoInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="235dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="120dp"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="10dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="73dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/homepagegreen" />
+
+    <TextView
+        android:id="@+id/txtNewInvoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/newInvoices"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginEnd="45dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="75dp"
+        android:text="Fiyat"
+        android:textColor="@color/DarkGray"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+
+    <ImageView
+        android:id="@+id/imgBlackPattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/blackpattern" />
+
+    <com.hitomi.cmlibrary.CircleMenu
+        android:id="@+id/circleMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|right"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <com.hitomi.cmlibrary.CircleMenu
+        android:id="@+id/circleMenuCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom|right"
+        android:layout_weight="1"
+        android:visibility="invisible"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="35dp"
+        app:backgroundTint="@color/UlensSecondColor"
+        app:srcCompat="@drawable/iconcamera"
+        tools:layout_editor_absoluteX="311dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+</android.support.design.widget.CoordinatorLayout>
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarHomePage"
+            android:layout_width="match_parent"
+            app:theme="@style/ThemeToolbar"
+            app:popupTheme="@style/ThemeToolbar"
+            android:layout_height="wrap_content"
+            android:background="@color/UlensColor"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeToolbar"
+            app:title="Harcamalarım" />
+
+            <Button
+                android:id="@+id/btnNewReport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/toolbarHomePage"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:background="@color/transparent"
+                android:text="Rapor Oluştur"
+                android:textColor="@android:color/white"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/navigation_header"
+            app:menu="@menu/navigation_menu"></android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+
+</RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ulens.ulensapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ulogomini"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/ulogomini"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity
+            android:name="com.ulens.ulensapp.NonUserThings.SplashScreen"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ulens.ulensapp.NonUserThings.LoginActivity"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.ulens.ulensapp.NonUserThings.RegisterActivity"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.ulens.ulensapp.NonUserThings.ForgetPassword"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.ulens.ulensapp.HomePage"
+            android:exported="true"
+            android:label="@string/title_activity_home_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.ulens.ulensapp.AddInvoiceActivities.CameraActivity" />
+        <activity
+            android:name="com.ulens.ulensapp.AddInvoiceActivities.InvoiceDetail"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.ulens.ulensapp.PostedInvoiceDetail"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.ulens.ulensapp.AddInvoiceActivities.ManuelInvoice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ulens.ulensapp.UnsubmittedReports"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ulens.ulensapp.Reports.ReportUnSubmittedInvoices"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ulens.ulensapp.InvoiceChoose"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ulens.ulensapp.EditInvoices.ChangeableInvoice"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.ulens.ulensapp.SubmittedReports"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ulens.ulensapp.Reports.ReportSubmittedInvoices"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ulens.ulensapp.NonUserThings.Administration"
+            android:theme="@style/FullScreen" />
+        <activity
+            android:name="com.ulens.ulensapp.Reports.UnResulted.AllReportsNotSended"
+            android:label="@string/title_activity_all_reports"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ulens.ulensapp.Reports.UnResulted.AllReportsSended"
+            android:label="@string/title_activity_all_reports2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ulens.ulensapp.SupportActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.ulens.ulensapp.EditInvoices.ReportedInvoiceDetails"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.ulens.ulensapp.AddInvoiceActivities.DistanceActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ulens.ulensapp.EditInvoices.ReportedSendedInvoiceDetails"
+            android:theme="@style/FullScreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.ulens.ulensapp.Reports.Resulted.ResultedReportsConfirmed"
+            android:label="@string/title_activity_resulted_reports_confirmed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.ulens.ulensapp.Reports.Resulted.ResultedReportsRejected"
+            android:label="@string/title_activity_resulted_reports_rejected"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.ulens.ulensapp.CameraDeneme"
+            android:screenOrientation="landscape" > >
+        </activity>
+    </application>
+
+</manifest>

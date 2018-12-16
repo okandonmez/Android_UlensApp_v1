@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imgIcon"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+         <!--/>-->
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center_vertical"
+        app:civ_border="false"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/SlateGray"
+        app:civ_shadow_radius="15" />
+
+    <!--<de.hdodenhof.circleimageview.CircleImageView-->
+        <!--android:id="@+id/imgIcon"-->
+        <!--android:layout_width="80dp"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginLeft="12dp"-->
+
+        <!--android:layout_marginStart="12dp"-->
+        <!--android:background="@drawable/circleimageshadow"-->
+        <!--android:gravity="center_vertical" />-->
+
+    <TextView
+        android:id="@+id/txtAmountRow"
+        android:layout_width="72dp"
+        android:layout_height="42dp"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtTitle"
+        android:layout_weight="1"
+        android:text="TextView"
+        android:textColor="@color/UlensColor"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/imgIcon"
+        android:layout_toRightOf="@+id/imgIcon"
+        android:text="TextView"
+        android:textColor="@color/Black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTitle"
+        android:layout_alignStart="@+id/txtTitle"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="13dp"
+        android:text="Oluşturulma Tarihi "
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txtReportDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDate"
+        android:layout_alignStart="@+id/txtDate"
+        android:layout_below="@+id/txtDate"
+        android:layout_marginTop="7dp"
+        android:text="2018-01-01"
+        android:textSize="12sp" />
+
+</RelativeLayout>
